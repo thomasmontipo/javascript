@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 5%;
+            padding: 0;
+        }
+        div#area{
+            background-color: green;
+            color: white;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            font-size: 2em;
+        }
+
+    </style>
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id="area">
+        Clique aqui...
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        
+        /*Listas de entradas de eventos*/
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            a.innerText = 'Clicou...'
+            a.style.background =  'red'
+            a.style.color = 'white'
+            a.style.borderRadius = '20px'
+        }
+
+        function entrar(){
+            a.style.background = 'blue'
+            a.style.color = 'white'
+            a.innerText = 'Entrou'
+            a.style.borderRadius = '5px'
+        }
+
+        function sair(){
+            a.style.background = 'brown'
+            a.style.color = 'white'
+            a.innerText = 'Saiu'
+            a.style.borderRadius = '50px'
+        }
+
+    </script>
+</body>
+</html>

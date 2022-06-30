@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Consultar infrações do veículo</h1>
+    <p><strong>Preencha os campos abaixo</strong></p>
+    <div>
+        Nome: <input type="text" name="nome" id="nome"><br>
+        Veículo: <input type="text" name="veiculo" id="veiculo"><br>
+        Placa: <input type="text" name="placa" id="pla"><br>
+        Velocidade aferida: <input type="number" name="velocidade" id="vel"><br>
+        <div class="botao"><input type="button" value="Verificar" onclick="calcular()"><br></div>
+        <div res id="res"></div>
+    </div>
+    <script>
+        function calcular(){
+            var nome = window.document.querySelector('input#nome').value
+            var veiculo = window.document.querySelector('input#veiculo').value
+            var pla = window.document.querySelector('input#pla').value
+            var vel = window.document.querySelector('input#vel').value
+            var res = window.document.querySelector('div#res')
+            if(vel >= 80){
+                res.innerHTML = `Olá ${nome}! O veículo ${veiculo} de placas ${pla} estava na velocidade de ${vel} km/h e por isso foi <strong>MULTADO</strong>`
+            }
+        }
+    </script>
+</body>
+</html>

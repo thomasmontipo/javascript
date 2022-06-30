@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="ex009.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Teste HTML e JS</title>
+    <style>
+        input{
+            padding-top: 10px;
+            margin: 10px;
+        }
+
+        input.button{
+            background-color: rgb(71, 213, 106);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.308);
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+        }
+
+        input.button:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo a página do Detran</h1>
+      
+    Digite o seu país de origemm: <input type="text" name="nick" id="nome">
+    
+    <input type="button" value="Verificar" class="button" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var nome = window.document.querySelector('input#nome').value.toLowerCase()
+            var res = window.document.querySelector('div#res')
+
+            if (nome == 'brasil'){
+            res.innerHTML = `Você é Brasileiro`
+            }
+            else{
+                res.innerHTML = 'Você é estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-indent: 60px;
+    padding-top: 20px;
+}
+
+body{
+    background-color: rgba(174, 196, 99, 0.495);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 1.5em;
+
+}
+
+body > div{
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+div > input{
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.botao{
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+}
+
+div#res{
+    padding-top: 20px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Estrangeiro ou brasileiro?</h1>
+    digite o país onde você nasceu: <input type="text" name="" id="pais">
+    <input type="button" value="Verificar" onclick="calculate()">
+    <div id="res"></div>
+
+    <script>
+        function calculate(){
+            var pais = window.document.querySelector('input#pais').value.toUpperCase()
+            var res = window.document.querySelector('div#res')
+
+            if (pais == 'BRASIL'){
+                res.innerHTML = `Você nasceu no ${pais} e por isso você é <strong>BRASILEIRO</strong>!`
+            }
+
+            else {
+                res.innerHTML = `Você nasceu no ${pais} e por isso você é <strong>NÃO É BRASILEIRO</strong>!`
+            }
+        }
+    </script>
+</body>
+</html>
