@@ -13,7 +13,7 @@ function verificar(){
 
     //Cálculo da idade
     
-    if (idade<0 || idade > 120 || fano.value.length == 0){
+    if (idade<0 || idade > 120 || fano.length == 0){
         window.alert('[ERRO] Ano de nascimento inválido')
     }
 
