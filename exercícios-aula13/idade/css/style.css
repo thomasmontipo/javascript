@@ -1,4 +1,39 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+body{
+    background-color: aqua;
+}
+
+header{
+    text-align: center;
+    width: 75%;
+    padding-top: 20px;
+    margin: auto;
+
+}
+
+div#corpo{
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.623);
+
+}
+
+div#res{
+    padding: 20px 0px 20px 0px;
+}
+
+input#button{
+    margin-top: 10px;
 }
